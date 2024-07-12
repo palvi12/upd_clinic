@@ -19,16 +19,16 @@ public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-//   @NotBlank(message = "id is mandatory")
+   @NotBlank(message = "id is mandatory")
     @Column(name = "id")
     private int id;
 
 
-//    @NotBlank(message = "city_name is mandatory")
+   @NotBlank(message = "city_name is mandatory")
     @Column(name = "city_name")
     private String city_name;
-
-//    @NotBlank(message = "state_code is mandatory")
+    
+    @NotBlank(message = "state_code is mandatory")
     @Column(name = "state_code")
     private int state_code;
 
