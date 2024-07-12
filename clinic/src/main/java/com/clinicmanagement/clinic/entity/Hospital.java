@@ -23,19 +23,19 @@ public class Hospital {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-//    @NotBlank(message = "hid is mandatory")
+   @NotBlank(message = "hid is mandatory")
     @Column(name = "hid")
     private int hid;
-//    @NotBlank
-//    @NotBlank(message = "HName is mandatory")
+
+    @NotBlank(message = "HName is mandatory")
     @Column(name = "HName")
     private String HName;
-//    @NotBlank
-//    @NotBlank(message = "HAddress is mandatory")
+
+    @NotBlank(message = "HAddress is mandatory")
     @Column(name = "HAddress")
     private String HAddress;
 
-//    @Email(message = "Please provide a valid email address")
+    @Email(message = "Please provide a valid email address")
     @Column(name = "HGmail")
     private String HGmail;
 
